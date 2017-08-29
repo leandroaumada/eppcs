@@ -9,3 +9,4 @@ void Ponto :: setY(double y){
   this->Y = y;
 }
 
+
