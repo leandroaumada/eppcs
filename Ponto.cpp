@@ -1,3 +1,5 @@
 #include "Ponto.h"
 #include <iostream>
-usingname std
+usingnamespace std
+
+
