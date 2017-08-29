@@ -2,6 +2,13 @@
 #include <iostream>
 usingnamespace std
 
+double Ponto :: getX(){
+  return X;
+}
+void Ponto :: setX(double x){
+  this->X = x;
+}
+
 double Ponto :: getY(){
   return Y;
 }
