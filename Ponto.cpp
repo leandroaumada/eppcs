@@ -30,6 +30,3 @@ bool eIgual(Ponto* outro){
     else return false;
 };
 
-#endif // PONTO_H
-
-
