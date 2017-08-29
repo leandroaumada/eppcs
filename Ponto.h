@@ -3,6 +3,8 @@
 
 class Ponto {
 public:
+  double X;
+  double Y;
   /**
    * Obtem o valor do Ponto na coordenada horizontal (x).
    */
