@@ -1,10 +1,13 @@
 #ifndef PONTO_H
 #define PONTO_H
+#define eps 1e-5
+#include <math.h>
 
 class Ponto {
 public:
   double X;
   double Y;
+  
   /**
    * Obtem o valor do Ponto na coordenada horizontal (x).
    */
@@ -38,9 +41,7 @@ public:
    * suficientemente proximos.
    */
   bool eIgual(Ponto* outro);
-    if outro->X == this->X && outro->Y == this->Y
-      return true;
-    else return false;
+  
   // ADICIONE OS ATRIBUTOS NECESSARIOS
 };
 
