@@ -3,10 +3,13 @@
 
 class Ponto {
 public:
+  double X;
+  double Y;
   /**
    * Obtem o valor do Ponto na coordenada horizontal (x).
    */
   double getX();
+    return this->X;
 
   /**
    * Obtem o valor do Ponto na coordenada vertical (y).
@@ -17,7 +20,7 @@ public:
    * Define o valor do Ponto na coordenada horizontal (x).
    */
   void setX(double x);
-
+  this->X = x;
   /**
    * Define o valor do Ponto na coordenada vertical (y).
    */
@@ -35,7 +38,9 @@ public:
    * suficientemente proximos.
    */
   bool eIgual(Ponto* outro);
-
+    if outro->X == this->X && outro->Y == this->Y
+      return true;
+    else return false;
   // ADICIONE OS ATRIBUTOS NECESSARIOS
 };
 
