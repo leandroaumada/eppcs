@@ -5,6 +5,7 @@ usingnamespace std
 double Ponto :: getX(){
   return X;
 }
+
 void Ponto :: setX(double x){
   this->X = x;
 }
@@ -12,8 +13,12 @@ void Ponto :: setX(double x){
 double Ponto :: getY(){
   return Y;
 }
+
 void Ponto :: setY(double y){
   this->Y = y;
 }
 
+void Ponto :: imprimir(){
+  cout << "(" << x << " ; " << y << ")" << endl;
+ }
 
