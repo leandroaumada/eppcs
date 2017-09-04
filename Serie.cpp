@@ -29,6 +29,7 @@ Serie::bool estaVazia(){
   if (quantidade != 0)
     return true;
   else return false;
+}
 
 Serie::int getQuantidade(){
   return Quantidade;
