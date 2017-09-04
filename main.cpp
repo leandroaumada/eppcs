@@ -21,8 +21,26 @@ int main() {
   cout << endl;
   
   // Obtem  os canais escolhidos
-  ...
-
+  string canalX;
+  string canalY;
+  string listaCanais[NUMERO_MAXIMO_VALORES] = is->getNomeDosCanais();
+  int quantidadeCanais = is->getQuantidadeDeCanais();
+  int escolha;
+  
+  //Imprime a lista de canais para X
+  for(i=0; i < quantidadeCanais; i++){
+    cout << i + 1 << ") " << listaCanais[i] << endl;
+  }
+  cin >> escolha;
+  canalX = listaCanais[escolha - 1];
+  
+  //Imprime a lista de canais para Y
+  for(i=0; i < quantidadeCanais; i++){
+    cout << i + 1 << ") " << listaCanais[i] << endl;
+  }
+  cin >> escolha;
+  canalY = listaCanais[escolha - 1];
+  
   // Obtem o numero de Pontos a adicionar
   int quantidade;
   cout << "Obter quantos pontos? ";
