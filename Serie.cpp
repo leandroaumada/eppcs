@@ -1,7 +1,7 @@
 #include "Serie.h"
 
 
-void  Serie::setNome(string nome){
+void Serie::setNome(string nome){
   this->Nome = nome; 
 }
 
