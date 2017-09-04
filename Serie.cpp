@@ -42,3 +42,10 @@ Serie::void adicionar(double x, double y){
     Quantidade++;
   }
 }
+
+Serie::Ponto* getPosicao(int posicao){
+  if(posicao<0 || posicao >9)
+    return null;
+  return Pontos[posicao];
+}
+
