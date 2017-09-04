@@ -24,7 +24,8 @@ int main() {
 
   // Obtem o numero de Pontos a adicionar
   int quantidade;
-  ...
+  cout << "Obter quantos pontos? " << endl;
+  cin >> quantidade;
 
   // Cria a Serie
   Serie* ser = new Serie();
