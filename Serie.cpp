@@ -34,3 +34,9 @@ Serie::bool estaVazia(){
 Serie::int getQuantidade(){
   return Quantidade;
 }
+
+Serie::Ponto* getPosicao(int posicao){
+  if(posicao<0 || posicao >9)
+    return null;
+  return Pontos[posicao];
+}
