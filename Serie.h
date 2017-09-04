@@ -16,7 +16,7 @@ public:
   string Nome;
   string NomeDoCanalX;
   string NomeDoCanalY;
-  int Quantidade;
+  int Quantidade = 0;
   
   
   // Permite definir o nome, o nomeDoCanalX e o nomeDoCanalY.
