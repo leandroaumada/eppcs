@@ -38,6 +38,7 @@ Serie::int getQuantidade(){
 Serie::void adicionar(double x, double y){
   if(Quantidade < NUMERO_MAXIMO_VALORES){
     Pontos[Quantidade]->setX(x);
+    Pontos[Quantidade]->setY(y);
     Quantidade++;
   }
 }
