@@ -41,7 +41,7 @@ int main() {
   }
 
   cout << "Imprimindo os pontos obtidos" << endl;
-  ...
+  ser->imprimir();
 
   cout << "Limite Superior: ";
   ...
