@@ -17,6 +17,8 @@ public:
   string NomeDoCanalX;
   string NomeDoCanalY;
   int Quantidade = 0;
+  Ponto* PontoSuperior = new Ponto;
+  Ponto* PontoInferior = new Ponto;
   
   
   // Permite definir o nome, o nomeDoCanalX e o nomeDoCanalY.
