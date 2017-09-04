@@ -11,8 +11,15 @@ using namespace std;
 int main() {
   InterfaceSerial* is = new InterfaceSerial();
   is->inicializar(COMM);
+  
 
-  // Obtem o nome da Serie e os canais escolhidos
+  // Obtem o nome e o atribui a serie ser
+  string nomeSerie;
+  cout << "Informe o nome da serie: ";
+  cin >> nomeSerie;
+  cout << endl;
+  
+  // Obtem  os canais escolhidos
   ...
 
   // Obtem o numero de Pontos a adicionar
@@ -20,7 +27,8 @@ int main() {
   ...
 
   // Cria a Serie
-  ...
+  Serie* ser = new Serie();
+  ser->setNome(nomeSerie);
 
   cout << "Obtendo os pontos" << endl;
   for (int i = 0; i < quantidade; i++) {
