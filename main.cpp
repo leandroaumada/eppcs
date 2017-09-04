@@ -55,7 +55,7 @@ int main() {
   for (int i = 0; i < quantidade; i++) {
     is->atualizar();
     // adiciona os valores a Serie
-    ...
+    ser->adicionar(Pontos[i]->getX(), Pontos[i]->getY);
   }
 
   cout << "Imprimindo os pontos obtidos" << endl;
