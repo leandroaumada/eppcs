@@ -49,3 +49,22 @@ Serie::Ponto* getPosicao(int posicao){
   return Pontos[posicao];
 }
 
+Serie::Ponto* getLimiteSuperior(){
+  int i;
+  double maiorX, maiorY;
+  maiorX = Pontos[0]->X;
+  maiorY = Pontos[0]->Y;
+  
+  //Encontra os maiores valores de X e Y entre os pontos da serie
+  for(i = 1; i < NUMERO_MAXIMO_VALORES; i++){
+    if(Pontos[i]->X > maiorX)
+      maiorX = Pontos[i]->X;
+    if(Pontos[i]->Y > maiorY)
+      maiorY = Pontos[i]->Y;
+  }
+  //Atribui ao Atributo PontoSuperior os valores obtidos
+  PontoSuperior->setX(maiorX);
+  PontoSuperior->setY(maiorY);
+  
+  return PontoSuperior;
+}
