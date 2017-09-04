@@ -1,25 +1,31 @@
 #include "Serie.h"
 
 
-void setNome(string nome){
+serie::void setNome(string nome){
   this->Nome = nome; 
 }
 
-void setNomeDoCanalX(string nomeDoCanalX){
-  this->NomeDoCanalX = nomeDoCanalX; {
-    
-  }
-v
-setNomeDoCanalY(string nomeDoCanalY){
+serie::void setNomeDoCanalX(string nomeDoCanalX){
+  this->NomeDoCanalX = nomeDoCanalX;
+}
+  
+serie::setNomeDoCanalY(string nomeDoCanalY){
   this->NomeDoCanalY = nomeDoCanalY; 
 }
 
-string getNome(){
+serie::string getNome(){
   return Nome;
 }
-string getNomeDoCanalX(){
+
+serie::string getNomeDoCanalX(){
   return NomeDoCanalX;
 }
-string getNomeDoCanalY(){
+
+serie::string getNomeDoCanalY(){
   return NomeDoCanalY;
 }
+
+serie::bool estaVazia(){
+  if (quantidade != 0)
+    return true;
+  else return false;
