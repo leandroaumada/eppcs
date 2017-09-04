@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #include "Serie.h"
 #include "Ponto.h"
@@ -24,8 +25,9 @@ int main() {
 
   // Obtem o numero de Pontos a adicionar
   int quantidade;
-  cout << "Obter quantos pontos? " << endl;
+  cout << "Obter quantos pontos? ";
   cin >> quantidade;
+  cout << endl;
 
   // Cria a Serie
   Serie* ser = new Serie();
