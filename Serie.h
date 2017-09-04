@@ -10,6 +10,15 @@ using namespace std;
 
 class Serie {
 public:
+  
+  //Atributos:
+  Ponto* Pontos[NUMERO_MAXIMO_VALORES] = new Ponto;
+  string Nome;
+  string NomeDoCanalX;
+  string NomeDoCanalY;
+  int Quantidade;
+  
+  
   // Permite definir o nome, o nomeDoCanalX e o nomeDoCanalY.
   void setNome(string nome);
   void setNomeDoCanalX(string nomeDoCanalX);
