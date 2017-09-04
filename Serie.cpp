@@ -68,3 +68,24 @@ Serie::Ponto* getLimiteSuperior(){
   
   return PontoSuperior;
 }
+
+Serie::Ponto* getLimiteInferior{
+  int i = 0, limiteX, limiteY;
+  limiteX = Pontos[i]->getX();
+  limiteY = Pontos[i]->getY();
+  for (i = 1; i < quantidade; i++){
+  
+    if(Pontos[i]->getX() < limiteX)
+      limiteX = Pontos[i]->getX();
+    if(Pontos[i]->getY() < limiteY)
+      limiteY = Pontos[i]->getY();
+  }
+  PontoInferior->setX(limiteX);
+  PontoInferior->setY(limiteY);
+  
+  return PontoInferior;
+}
+
+
+
+
