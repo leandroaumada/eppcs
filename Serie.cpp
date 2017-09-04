@@ -90,7 +90,8 @@ Serie::Ponto* getLimiteInferior{
 Serie::void imprimir(){
   cout << Serie << this->Nome << endl;
   for (i = 0; i < quantidade; i++){
-    cout << Pontos[i] << endl;  
+    cout << "(" << Pontos[i]->getX() << ", " << Pontos[i]->getY() << ")" << endl;  
   }
+}
 
 
