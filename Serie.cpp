@@ -35,8 +35,17 @@ Serie::int getQuantidade(){
   return Quantidade;
 }
 
+Serie::void adicionar(double x, double y){
+  if(Quantidade < NUMERO_MAXIMO_VALORES){
+    Pontos[Quantidade]->setX(x);
+    Pontos[Quantidade]->setY(y);
+    Quantidade++;
+  }
+}
+
 Serie::Ponto* getPosicao(int posicao){
   if(posicao<0 || posicao >9)
     return null;
   return Pontos[posicao];
 }
+
