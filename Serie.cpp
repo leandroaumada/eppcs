@@ -87,6 +87,10 @@ Serie::Ponto* getLimiteInferior{
   return PontoInferior;
 }
 
-
+Serie::void imprimir(){
+  cout << Serie << this->Nome << endl;
+  for (i = 0; i < quantidade; i++){
+    cout << Pontos[i] << endl;  
+  }
 
 
