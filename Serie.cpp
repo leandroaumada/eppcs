@@ -1,41 +1,41 @@
 #include "Serie.h"
 
 
-Serie::void setNome(string nome){
+void  Serie::setNome(string nome){
   this->Nome = nome; 
 }
 
-Serie::void setNomeDoCanalX(string nomeDoCanalX){
+void Serie::setNomeDoCanalX(string nomeDoCanalX){
   this->NomeDoCanalX = nomeDoCanalX;
 }
   
-Serie::void setNomeDoCanalY(string nomeDoCanalY){
+void Serie::setNomeDoCanalY(string nomeDoCanalY){
   this->NomeDoCanalY = nomeDoCanalY; 
 }
 
-Serie::string getNome(){
+string Serie::getNome(){
   return Nome;
 }
 
-Serie::string getNomeDoCanalX(){
+string Serie::getNomeDoCanalX(){
   return NomeDoCanalX;
 }
 
-Serie::string getNomeDoCanalY(){
+string Serie::getNomeDoCanalY(){
   return NomeDoCanalY;
 }
 
-Serie::bool estaVazia(){
+bool Serie::estaVazia(){
   if (quantidade != 0)
     return true;
   else return false;
 }
 
-Serie::int getQuantidade(){
+int Serie::getQuantidade(){
   return Quantidade;
 }
 
-Serie::void adicionar(double x, double y){
+void Serie::adicionar(double x, double y){
   if(Quantidade < NUMERO_MAXIMO_VALORES){
     Pontos[Quantidade]->setX(x);
     Pontos[Quantidade]->setY(y);
@@ -87,7 +87,7 @@ Serie::Ponto* getLimiteInferior{
   return PontoInferior;
 }
 
-Serie::void imprimir(){
+void Serie::imprimir(){
   cout << Serie << this->Nome << endl;
   for (i = 0; i < quantidade; i++){
     cout << "(" << Pontos[i]->getX() << ", " << Pontos[i]->getY() << ")" << endl;  
