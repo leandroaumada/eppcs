@@ -44,9 +44,13 @@ int main() {
   ...
 
   cout << "Limite Superior: ";
-  ...
+  cout << "(" << ser->PontoSuperior->getX();
+  cout << ", " << ser->PontoSuperior->getY();
+  cout << ")" << endl << endl;
 
   cout << "Limite Inferior: ";
-  ...
+  cout << "(" << ser->PontoInferior->getX();
+  cout << ", " << ser->PontoInferior->getY();
+  cout << ")" << endl;
   return 0;
 }
