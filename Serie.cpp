@@ -49,3 +49,15 @@ Serie::Ponto* getPosicao(int posicao){
   return Pontos[posicao];
 }
 
+Serie::Ponto* getLimiteInferior{
+  int i = 0, limiteX, limiteY;
+  limiteX = Pontos[i]->getX();
+  limiteY = Pontos[i]->getY();
+  for (i = 1; i < quantidade; i++)
+  {
+    if(Pontos[i]->getX() < limiteX)
+      limiteX = Pontos[i]->getX();
+    if(Pontos[i]->getY() < limiteY)
+      limiteY = Pontos[i]->getY();
+}
+
