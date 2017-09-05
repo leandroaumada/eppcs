@@ -43,13 +43,13 @@ void Serie::adicionar(double x, double y){
   }
 }
 
-Serie::Ponto* getPosicao(int posicao){
+Ponto* Serie::getPosicao(int posicao){
   if(posicao<0 || posicao >9)
     return null;
   return Pontos[posicao];
 }
 
-Serie::Ponto* getLimiteSuperior(){
+Ponto* Serie::getLimiteSuperior(){
   int i;
   double maiorX, maiorY;
   maiorX = Pontos[0]->X;
@@ -69,7 +69,7 @@ Serie::Ponto* getLimiteSuperior(){
   return PontoSuperior;
 }
 
-Serie::Ponto* getLimiteInferior{
+Ponto* Serie::getLimiteInferior{
   int i = 0;
   double limiteX, limiteY;
   limiteX = Pontos[i]->getX();
